@@ -1,0 +1,91 @@
+.card {
+  width: 85%;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4pxx 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  transform: translateY(-0.1px) scale(1.05);
+}
+
+.display-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.img-style {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  border-color: aquamarine;
+}
+.doctorsName {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.speciality {
+  color: rgb(111, 205, 205);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#Badge {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: normal;
+  background-color: rgb(235, 233, 233);
+  height: 24px;
+  width: 80px;
+  text-align: center;
+  border-radius: 8px;
+  margin-left: 15px;
+}
+.logo {
+  margin-right: 20px;
+}
+.location {
+  margin-left: 20px;
+}
+.location-place {
+  padding-left: 10px;
+  color: rgb(126, 125, 125);
+}
+.location-place1 {
+  padding-left: 10px;
+  color: rgb(58, 107, 176);
+  font-weight: 500;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#bg-gradient {
+  background-image: linear-gradient(to right, #1e758c, #3fdcbd);
+  border: none;
+  height: 35px;
+  width: 180px;
+  color: white;
+  font-weight: 500;
+  border-radius: 6px;
+}
+#bg-gradient:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(40, 138, 136),
+    rgb(78, 187, 178)
+  );
+}
